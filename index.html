@@ -64,7 +64,7 @@ async function GenerarPDF(fecha_pasada,diasC,id){
         }                
      }
      if($conte["nombre_contenedor"]=="ZGRU9027293"){
-            $conte["nombre_contenedor"]=="ZGRU7860448";
+            $conte["nombre_contenedor"]="ZGRU6860448";
         }
   
     completo.push({
@@ -138,7 +138,7 @@ async function GenerarPDF(fecha_pasada,diasC,id){
             //console.log(info.inyeccionEtileno);
             $conte = info.data.contenedor;
             if($conte["nombre_contenedor"]=="ZGRU9027293"){
-                $conte["nombre_contenedor"]="ZGRU7860448";
+                $conte["nombre_contenedor"]="ZGRU6860448";
             }
             nombreMadurador ="Reefer "+$conte["nombre_contenedor"]+" : "+$conte["descripcionC"];
             if (typeof X1 !== 'undefined') {
