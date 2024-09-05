@@ -63,6 +63,9 @@ async function GenerarPDF(fecha_pasada,diasC,id){
             diasArray.push(diaP);
         }                
      }
+     if($conte["nombre_contenedor"]=="ZGRU9027293"){
+            $conte["nombre_contenedor"]=="ZGRU7860448";
+        }
   
     completo.push({
         "telemetria_id" :id,
@@ -134,6 +137,9 @@ async function GenerarPDF(fecha_pasada,diasC,id){
             //console.log(info.tempSupply);
             //console.log(info.inyeccionEtileno);
             $conte = info.data.contenedor;
+            if($conte["nombre_contenedor"]=="ZGRU9027293"){
+                $conte["nombre_contenedor"]=="ZGRU7860448";
+            }
             nombreMadurador ="Reefer "+$conte["nombre_contenedor"]+" : "+$conte["descripcionC"];
             if (typeof X1 !== 'undefined') {
 
@@ -198,6 +204,7 @@ async function GenerarPDF(fecha_pasada,diasC,id){
                             }  
                         },
                     },
+                    /*
 
                    {
                         label : " Humedity",
@@ -220,8 +227,8 @@ async function GenerarPDF(fecha_pasada,diasC,id){
                        
 
                     }
+                    */
 
-/*
                     {
                         label : " ON/OFF",
                         data :  info.data.inyeccionEtileno ,
@@ -241,7 +248,7 @@ async function GenerarPDF(fecha_pasada,diasC,id){
                             } 
                         },
                     } 
-*/
+
                          
                 ]
             },
